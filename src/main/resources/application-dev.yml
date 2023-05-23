@@ -10,9 +10,9 @@ spring:
       filters: stat
       driver-class-name: com.mysql.jdbc.Driver
       #基本属性
-      url: jdbc:mysql://root:wPUpThK0YnHBjcd6sr7K@containers-us-west-58.railway.app:5633/railway
-      username: root
-      password: wPUpThK0YnHBjcd6sr7K
+      url: ${{MySQL.MYSQL_URL}}
+      username: ${{MySQL.MYSQLUSER}}
+      password: ${{MySQL.MYSQLPASSWORD}}
 #      url: jdbc:mysql://localhost:3306/blog
 #      username: root
 #      password: rootroot
